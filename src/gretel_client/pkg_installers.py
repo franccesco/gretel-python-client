@@ -45,6 +45,7 @@ def _install_pip_dependency(dep: str, verbose: bool = True):
         sys.executable,
         "-m",
         "pip",
+        "--user",
         "--disable-pip-version-check",
         "install",
         dep,
